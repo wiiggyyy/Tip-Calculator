@@ -161,6 +161,7 @@ input::placeholder {
 }
 
 #outputBox div{
+    background: red;
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
