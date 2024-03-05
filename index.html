@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <form>
+    <div id="leftSideCont">
+      <label for="priceInput">Bill</label>
+      <input type="number" id="priceInput" />
+      <label id="tipLabel" for="tipPercent">Select Tip %</label>
+      <div id="tipPercent">
+        <div id="seperate">
+          <button onclick="select()" type='button' id="labelFive" class="discount">5%</button>
+          <button onclick="selecttwo()" type='button' id="labelTwentyFive" class="discount">25%</button>
+        </div>
+        <div id="seperate">
+          <button onclick="selectthree()" type='button' id="labelTen" class="discount">10%</button>
+          <button onclick="selectfour()" type='button' id="labelFifty" class="discount">50%</button>
+        </div>
+        <div id="seperate">
+          <button onclick="selectfive()" type='button' id="labelFifteen" class="discount">15%</button>
+          <input onclick="unTick()" type="number" placeholder="Custom" id="customTip"/>
+        </div>
+      </div>
+      <label for="">Number Of People</label>
+      <input type="number" id="numOfPeople"/>
+    </div>
+    <div id="rightSideCont">
+      <div id="outputBox">
+        <div>
+          <h2>Tip Amount</h2>
+          <p>/ person</p>
+        </div>
+        <h1 id="answerTip">$4.27</h1>
+      </div>
+      <div id="outputBox">
+        <div>
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+        <h1 id="answerTotal">$32.79</h1>
+      </div>
+      <button type="button" onclick="calculation()" id="resetButton">Reset</button>
+    </div>
+  </form>
+</body>
+
+</html>
