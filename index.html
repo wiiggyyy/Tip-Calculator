@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <h1 class="title">SPLI<br>TTER</h1>
   <form>
     <div id="leftSideCont">
       <label for="priceInput">Bill</label>
@@ -22,18 +23,14 @@
       <div id="tipPercent">
         <div id="seperate">
           <button onclick="select()" type='button' id="labelFive" class="discount">5%</button>
-          <button onclick="selecttwo()" type='button' id="labelTwentyFive" class="discount">25%</button>
-        </div>
-        <div id="seperate">
-          <button onclick="selectthree()" type='button' id="labelTen" class="discount">10%</button>
-          <button onclick="selectfour()" type='button' id="labelFifty" class="discount">50%</button>
-        </div>
-        <div id="seperate">
-          <button onclick="selectfive()" type='button' id="labelFifteen" class="discount">15%</button>
+          <button onclick="selecttwo()" type='button' id="labelTen" class="discount">10%</button>
+          <button onclick="selectthree()" type='button' id="labelFifteen" class="discount">15%</button>
+          <button onclick="selectfour()" type='button' id="labelTwentyFive" class="discount">25%</button>
+          <button onclick="selectfive()" type='button' id="labelFifty" class="discount">50%</button>
           <input onclick="unTick()" type="number" placeholder="Custom" id="customTip"/>
         </div>
       </div>
-      <label for="">Number Of People</label>
+      <div class="labelCont"><label for="numOfPeople">Number of People</label><label for="numOfPeople" id="errorMsg">Can't be zero</label></div>
       <input type="number" id="numOfPeople"/>
     </div>
     <div id="rightSideCont">
@@ -42,14 +39,14 @@
           <h2>Tip Amount</h2>
           <p>/ person</p>
         </div>
-        <h1 id="answerTip">$4.27</h1>
+        <h1 id="answerTip">$0.00</h1>
       </div>
       <div id="outputBox">
         <div>
           <h2>Total</h2>
           <p>/ person</p>
         </div>
-        <h1 id="answerTotal">$32.79</h1>
+        <h1 id="answerTotal">$0.00</h1>
       </div>
       <button type="button" onclick="calculation()" id="resetButton">Reset</button>
     </div>
